@@ -1,0 +1,5 @@
+{
+  "description": "Installs rbvmomi, hocon gems for the puppetlabs/vsphere module",
+  "supports_noop": false,
+  "input_method": "environment"
+}

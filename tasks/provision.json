@@ -1,0 +1,38 @@
+{
+    "description": "Provision a VM in vSphere",
+    "input_method": "stdin",
+    "parameters": {
+      "vm_tempalte": {
+        "description": "Select the VM template to be used",
+        "type": "Enum[choice1, choice2]"
+      },
+      "name": {
+        "description": "The name of the VM instance",
+        "type": "String[1]"
+      },
+      "count": {
+        "description": "The number of instances to create",
+        "type": "Integer"
+      },
+      "role": {
+        "description": "Puppet Role to be assigned to instance",
+        "type": "Optional[String[1]]"
+      },
+      "environment": {
+        "description": "Puppet Role to be assigned to instance",
+        "type": "Enum[canary, non-prod, prod]"
+      },
+      "size": {
+        "description": "VM instance size",
+        "type": "Enum[t2.micro, medium, xlarge_win, xlarge_lin]"
+      },
+      "network": {
+        "description": "VM network",
+        "type": "Enum[dev, qa, canary, nonprod, prod]"
+      },
+      "ticket": {
+        "description": "Service desk ticket number",
+        "type": "Optional[String[1]]"
+      }
+    }
+  }
